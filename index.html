@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viviksha Design Studio | Architecture & Interior Design, Bengaluru</title>
-  <meta name="description" content="Viviksha Design Studio — a luxury architecture and interior design practice based in Bengaluru. We create environments that feel unmistakably yours." />
-  <meta name="keywords" content="architecture, interior design, Bengaluru, luxury, Viviksha, residential, commercial" />
+  <title>VIVIKSHA Design Studio | Architecture &amp; Interior Design, Bengaluru</title>
+  <meta name="description" content="VIVIKSHA Design Studio — a luxury architecture and interior design practice based in Bengaluru. We create environments that feel unmistakably yours." />
+  <meta name="keywords" content="architecture, interior design, Bengaluru, luxury, VIVIKSHA, residential, commercial" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet" />
@@ -17,8 +17,11 @@
   <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
       <a href="#home" class="nav-logo" id="nav-logo-link" aria-label="Viviksha Design Studio home">
-        <span class="logo-text">Viviksha</span>
-        <span class="logo-sub">DESIGN STUDIO</span>
+        <img src="images/logo.png" alt="Viviksha Design Studio" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="logo-text">VIVIKSHA</span>
+          <span class="logo-sub">DESIGN STUDIO</span>
+        </div>
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -55,10 +58,19 @@
     </div>
 
     <!-- Hero background: architectural sketch (Image 2 — sketch) -->
-    <div class="hero-bg" id="hero-bg">
-      <img src="images/sketch.jpg" alt="Architectural sketch" class="hero-bg-img" id="hero-sketch-img" onerror="this.style.display='none'" />
-      <div class="hero-bg-fallback" aria-hidden="true"></div>
-    </div>
+   <div class="hero-bg" id="hero-bg">
+
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    playsinline>
+    <source src="images/homevedio.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-bg-fallback" aria-hidden="true"></div>
+
+</div>
 
     <!-- Hero overlay gradient -->
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -86,7 +98,7 @@
     </div>
 
     <!-- Corner stamps -->
-    <div class="hero-stamp hero-stamp-tl" aria-hidden="true">Bengaluru · India</div>
+    <div class="hero-stamp hero-stamp-tl" aria-hidden="true"></div>
     <div class="hero-stamp hero-stamp-br" aria-hidden="true"></div>
   </section>
 
@@ -113,10 +125,24 @@
   </div>
 
   <!-- ═══════════════════════════════════════ ABOUT SECTION ═══════════════════════════════════════ -->
-  <section id="about" class="about-section" aria-label="About Viviksha Design Studio">
-    <div class="about-bg-image" aria-hidden="true">
-      <img src="images/realistic.jpg" alt="Completed interior space" class="about-bg-img" id="about-realistic-img" onerror="this.style.display='none'" />
+ <section id="about" ></section>>
+    <div class="process-inner">
+      <div class="process-header">
+        <p class="eyebrow is-visible" data-reveal="up">How We Work</p>
+        <h2 class="display-lg is-visible" data-reveal="up" data-delay="1">Our <em class="gold-italic">Process</em></h2>
+      </div>
+      <div class="process-track">
+        <div class="process-connector"><div class="process-connector-fill" style="width: 100%;"></div></div>
+        <div class="process-step is-visible"><div class="step-node"><span>01</span></div><h3 class="step-title">Discovery</h3><p class="step-desc">We listen before we draw — understanding your vision, lifestyle, goals, and site in full.</p></div>
+        <div class="process-step is-visible"><div class="step-node"><span>02</span></div><h3 class="step-title">Concept</h3><p class="step-desc">A spatial narrative emerges through mood boards, concept sketches, and spatial diagrams.</p></div>
+        <div class="process-step is-visible"><div class="step-node"><span>03</span></div><h3 class="step-title">Design</h3><p class="step-desc">Detailed drawings, material palettes, and 3D visualisations refined to your approval.</p></div>
+        <div class="process-step is-visible"><div class="step-node"><span>04</span></div><h3 class="step-title">Execution</h3><p class="step-desc">Every aspect of construction and installation overseen so the vision translates faithfully.</p></div>
+        <div class="process-step is-visible"><div class="step-node"><span>05</span></div><h3 class="step-title">Handover</h3><p class="step-desc">A space that exceeds expectation — with full documentation and continued support.</p></div>
+      </div>
     </div>
+  </section>
+
+  <div class="about-fulldivider" aria-hidden="true"></div>
 
     <div class="about-container">
 
@@ -134,26 +160,19 @@
           <img src="images/sketch.jpg" alt="Architectural sketch" onerror="this.parentElement.style.display='none'" />
           <span class="thumb-label">Initial concept sketch</span>
         </div>
-        <!-- Floating stat chips -->
-        <div class="stat-chip chip-1 reveal-up delay-2" aria-label="100% satisfaction">
-          <span class="chip-num">100%</span>  
-          <span class="chip-label">Satisfaction</span>
-        </div>
-        <div class="stat-chip chip-2 reveal-up delay-3" aria-label="8 years experience">
-          <span class="chip-num">8</span>
-          <span class="chip-label">Years</span>
-        </div>
+        <!-- Floating stat chip — Years -->
+      
       </div>
 
       <!-- Right: editorial text -->
       <div class="about-text-col">
-        <div class="section-label reveal-up">WHO WE ARE</div>
+        <div class="section-label reveal-up"></div>
         <h2 class="about-headline reveal-up delay-1">
           Precision<br />in every<br /><em>detail.</em>
         </h2>
         <div class="about-divider reveal-up delay-2" aria-hidden="true"></div>
         <p class="about-body reveal-up delay-2">
-          Viviksha Design Studio was built on a single belief: great design is <em>felt</em> before it is seen. It doesn't announce itself — it simply makes life more beautiful, more intentional, more <em>you.</em>
+          VIVIKSHA DESIGN STUDIO was built on a single belief: great design is <em>felt</em> before it is seen. It doesn't announce itself — it simply makes life more beautiful, more intentional, more <em>you.</em>
         </p>
         <p class="about-body reveal-up delay-3">
           We are a boutique architecture and interior design practice based in Bengaluru, working across private residences, premium hospitality, and considered commercial environments. Every project begins with deep listening — and ends with a space that feels unmistakably right.
@@ -164,7 +183,7 @@
               <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="10" r="3" fill="currentColor"/></svg>
             </div>
             <div>
-              <strong>Viviksha</strong><br />
+              <strong>VIVIKSHA</strong><br />
               <span>"Desire for Knowledge" — the wisdom that shapes every space</span>
             </div>
           </div>
@@ -329,14 +348,7 @@
 
     <!-- Filter tabs -->
     <div class="archive-filters reveal-up delay-2" role="tablist" aria-label="Project category filter">
-      <button class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">All</button>
-      <button class="filter-btn" data-filter="Exteriors" id="filter-residential" role="tab" aria-selected="false">Exteriors</button>
-      <button class="filter-btn" data-filter="Kitchens" id="filter-interiors" role="tab" aria-selected="false">Kitchen</button>
-      <button class="filter-btn" data-filter="Wardrobes" id="filter-exteriors" role="tab" aria-selected="false">Wardrobes</button>
-      <button class="filter-btn" data-filter="Commercial" id="filter-commercial" role="tab" aria-selected="false">Commercial</button>
-      <button class="filter-btn" data-filter="Bathrooms" id="filter-bathrooms" role="tab" aria-selected="false">Bathrooms</button>  
-      <button class="filter-btn" data-filter="Living Rooms" id="filter-exteriors" role="tab" aria-selected="false">Living Rooms</button>
-
+      <button class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">Projects</button>
     </div>
 
     <!-- Masonry grid -->
@@ -405,7 +417,7 @@
   <section id="portfolio" class="portfolio-section" aria-label="Featured projects portfolio">
     <div class="portfolio-header">
       <div class="section-label reveal-up">SELECTED WORKS</div>
-      <h2 class="section-title reveal-up delay-1">Featured <em>Projects</em></h2>
+      <h2 class="section-title reveal-up delay-1">Ongoing <em>Projects</em></h2>
     </div>
 
     <!-- Portfolio Slider -->
@@ -416,14 +428,14 @@
 <article class="portfolio-slide" id="proj-residence" aria-label="Contemporary Residence project">
   <div class="slide-image-wrap">
     <img
-      src="images/living.jpeg"
+      src="images/ongoing 2.jpeg"
       alt="Contemporary Residence Exterior"
       class="slide-img"
     />
 
     <div class="slide-sketch-overlay">
       <img
-        src="images/sketch.jpg"
+        src="images/ongoing 2.jpeg"
         alt="Concept sketch"
         class="slide-sketch"
       />
@@ -432,11 +444,11 @@
 
   <div class="slide-content">
     <div class="slide-meta">
-      <span class="slide-cat">Residential Architecture</span>
+      <span class="slide-cat">Mr.Praveen Residence</span>
     </div>
 
     <h3 class="slide-title">
-      Contemporary<br />
+      Mr.Praveeny<br />
       <em>Residence</em>
     </h3>
 
@@ -452,17 +464,15 @@
     </p>
 
     <p class="slide-desc">
-      A contemporary multi-level residence designed with clean architectural
-      lines, warm material palettes, and thoughtfully integrated landscaping.
-      The design balances functionality, privacy, and natural light while
-      creating a refined living experience that seamlessly connects indoor and
-      outdoor spaces.
+       A thoughtfully designed contemporary urban residence that combines modern aesthetics with practical family living.
+      Defined by clean architectural lines, warm terracotta textures, vertical timber elements, and expansive glazing, 
+      the home creates a harmonious balance between privacy, natural light, and visual openness.
     </p>
 
     <div class="slide-tags">
       <span class="tag">Residential</span>
       <span class="tag">Exterior Design</span>
-      <span class="tag">Contemporary</span>
+      <span class="tag">ARCHITECTURE</span>
     </div>
   </div>
 </article>
@@ -470,21 +480,21 @@
         <!-- Project 2 -->
 <article class="portfolio-slide" id="proj-office" aria-label="Contemporary Workspace project">
   <div class="slide-image-wrap">
-    <img src="images/commercial.jpeg" alt="Contemporary Workspace Interior" class="slide-img" />
+    <img src="images/ongoing 1.jpeg" alt="Contemporary Workspace Interior" class="slide-img" />
 
     <div class="slide-sketch-overlay">
-      <img src="images/sketch.jpg" alt="Concept sketch" class="slide-sketch" />
+      <img src="images/ongoing 1.jpeg" alt="Concept sketch" class="slide-sketch" />
     </div>
   </div>
 
   <div class="slide-content">
     <div class="slide-meta">
-      <span class="slide-cat">Commercial Interiors</span>
+      <span class="slide-cat">Vanasiri Farm Lands</span>
     </div>
 
     <h3 class="slide-title">
-      Contemporary<br />
-      <em>Workspace</em>
+      Vanasiri <br />
+      <em>Farm Lands</em>
     </h3>
 
     <p class="slide-location">
@@ -499,124 +509,19 @@
     </p>
 
     <p class="slide-desc">
-      A thoughtfully designed workspace that combines functionality,
-      comfort, and contemporary aesthetics. Warm wood finishes, clean
-      architectural detailing, and efficient spatial planning create an
-      environment that encourages productivity, collaboration, and focus.
+      Inspired by the harmony between nature and modern infrastructure, Vanasiri combines well-planned access roads,
+     abundant tree cover, sustainable landscaping, and community-focused amenities to create a destination where wellness, 
+     recreation, and growth come together seamlessly.
+
     </p>
 
     <div class="slide-tags">
-      <span class="tag">Commercial</span>
-      <span class="tag">Workspace Design</span>
-      <span class="tag">Interior Design</span>
+      <span class="tag">FARM LANDS</span>
+      <span class="tag">NATURE LIVING</span>
+      <span class="tag">LANDSCAPE DESIGN</span>
     </div>
   </div>
 </article>
-        <!-- Project 3 -->
-<article class="portfolio-slide" id="proj-kitchen" aria-label="Contemporary Kitchen Design project">
-  <div class="slide-image-wrap">
-    <img
-      src="images/kitchen.jpeg"
-      alt="Contemporary Kitchen Design"
-      class="slide-img"
-    />
-
-    <div class="slide-sketch-overlay">
-      <img
-        src="images/sketch.jpg"
-        alt="Concept sketch"
-        class="slide-sketch"
-      />
-    </div>
-  </div>
-
-  <div class="slide-content">
-    <div class="slide-meta">
-      <span class="slide-cat">Kitchen Interiors</span>
-    </div>
-
-    <h3 class="slide-title">
-      Contemporary<br />
-      <em>Kitchen</em>
-    </h3>
-
-    <p class="slide-location">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <circle cx="7" cy="6" r="3" stroke="currentColor" stroke-width="1.2"/>
-        <path d="M7 1 C4 1 2 3.5 2 6 C2 10 7 13 7 13 C7 13 12 10 12 6 C12 3.5 10 1 7 1Z"
-              stroke="currentColor"
-              stroke-width="1.2"
-              fill="none"/>
-      </svg>
-      Residential Interior Project
-    </p>
-
-    <p class="slide-desc">
-      A modern kitchen designed for everyday functionality and visual harmony.
-      Soft pastel cabinetry, clean lines, efficient storage solutions, and
-      durable finishes come together to create a bright and inviting culinary
-      space that balances practicality with contemporary aesthetics.
-    </p>
-
-    <div class="slide-tags">
-      <span class="tag">Kitchen Design</span>
-      <span class="tag">Residential</span>
-      <span class="tag">Interior Design</span>
-    </div>
-  </div>
-</article>
-
-        <!-- Project 4 -->
-<article class="portfolio-slide" id="proj-livingroom" aria-label="Contemporary Living Room project">
-  <div class="slide-image-wrap">
-    <img
-      src="images/livingroom.jpeg"
-      alt="Contemporary Living Room Interior"
-      class="slide-img"
-    />
-
-    <div class="slide-sketch-overlay">
-      <img
-        src="images/sketch.jpg"
-        alt="Concept sketch"
-        class="slide-sketch"
-      />
-    </div>
-  </div>
-
-  <div class="slide-content">
-    <div class="slide-meta">
-      <span class="slide-cat">Living Room Interiors</span>
-    </div>
-
-    <h3 class="slide-title">
-      Contemporary<br />
-      <em>Living Room</em>
-    </h3>
-
-    <p class="slide-location">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <circle cx="7" cy="6" r="3" stroke="currentColor" stroke-width="1.2"/>
-        <path d="M7 1 C4 1 2 3.5 2 6 C2 10 7 13 7 13 C7 13 12 10 12 6 C12 3.5 10 1 7 1Z"
-              stroke="currentColor"
-              stroke-width="1.2"
-              fill="none"/>
-      </svg>
-      Residential Interior Project
-    </p>
-
-    <p class="slide-desc">
-      A thoughtfully designed living room that blends functionality with modern
-      aesthetics. Warm wood finishes, clean geometric forms, integrated storage,
-      and subtle décor elements create a welcoming environment for relaxation,
-      entertainment, and everyday living.
-    </p>
-
-    <div class="slide-tags">
-      <span class="tag">Living Room</span>
-      <span class="tag">Residential</span>
-      <span class="tag">Interior Design</span>
-    </div>
   </div>
 </article>
       <!-- Slider controls -->
@@ -667,7 +572,7 @@
           </div>
         </div>
         <div class="enquiry-social">
-          <a href="#" class="social-link" id="social-instagram" aria-label="Viviksha on Instagram">
+          <a href="https://www.instagram.com/vivikshadesignstudio?igsi=bG5vM2NsbGU1dW85" class="social-link" id="social-instagram" aria-label="Viviksha on Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
           </a>
           <a href="#" class="social-link" id="social-linkedin" aria-label="Viviksha on LinkedIn">
@@ -710,9 +615,7 @@
 
   <div class="form-heading">Start Your Project</div>
   <p class="form-sub">Tell us about your vision — we'll take it from here.</p>
-        <div class="form-heading">Start Your Project</div>
-        <p class="form-sub">Tell us about your vision — we'll take it from here.</p>
-
+      
         <div class="form-row">
           <div class="form-group">
             <label for="field-name" class="form-label">Full Name</label>
@@ -779,11 +682,11 @@
   <footer class="footer" role="contentinfo" aria-label="Site footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <div class="footer-logo">Viviksha</div>
+        <div class="footer-logo">VIVIKSHA</div>
         <div class="footer-logo-sub">DESIGN STUDIO</div>
         <p class="footer-tagline">Designing spaces with wisdom,<br />intention, and timeless beauty.</p>
         <div class="footer-social">
-          <a href="#" class="footer-social-link" id="footer-instagram" aria-label="Instagram">
+          <a href="https://www.instagram.com/vivikshadesignstudio?igsi=bG5vM2NsbGU1dW85" class="footer-social-link" id="footer-instagram" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
           </a>
           <a href="#" class="footer-social-link" id="footer-linkedin" aria-label="LinkedIn">
@@ -825,7 +728,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2025 Viviksha Design Studio. All rights reserved.</span>
+      <span>© 2025 VIVIKSHA DESIGN STUDIO. All rights reserved.</span>
       <span class="footer-credit">Crafted with wisdom &amp; intention.</span>
     </div>
   </footer>

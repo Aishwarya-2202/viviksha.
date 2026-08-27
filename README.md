@@ -70,3 +70,5 @@ Open `index.html` and search for:
 - `+91 98765 43210` → replace with real phone
 
 Open `index.html` and find `#social-instagram` and `#social-linkedin` anchor tags — add your real URLs.
+
+
