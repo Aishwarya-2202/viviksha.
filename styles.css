@@ -1,9 +1,9 @@
-﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   VIVIKSHA DESIGN STUDIO â€” styles.css
+/* ═══════════════════════════════════════════════════════════════
+   VIVIKSHA DESIGN STUDIO — styles.css
    Premium Luxury Architecture & Interior Design Website
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════════════════ */
 
-/* â”€â”€ DESIGN TOKENS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── DESIGN TOKENS ──────────────────────────────────────────── */
 :root {
   /* Core palette */
   --ivory:        #F8F5EF;
@@ -17,7 +17,7 @@
   --mid-grey:     #6B6560;
   --light-grey:   #9B9490;
 
-  /* Accent â€” luxury sparingly */
+  /* Accent — luxury sparingly */
   --forest:       #2C4A3E;
   --forest-mid:   #3D6357;
   --forest-light: #4E7C6A;
@@ -44,7 +44,7 @@
 }
 
 
-/* â”€â”€ RESET & BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── RESET & BASE ────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -78,7 +78,7 @@ ul { list-style: none; }
 ::-webkit-scrollbar-track { background: var(--stone); }
 ::-webkit-scrollbar-thumb { background: var(--forest); border-radius: 3px; }
 
-/* â”€â”€ SCROLL REVEAL SYSTEM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── SCROLL REVEAL SYSTEM ────────────────────────────────────── */
 .reveal-up,
 .reveal-left,
 .reveal-scale {
@@ -108,7 +108,7 @@ ul { list-style: none; }
 .delay-3 { transition-delay: 0.36s; }
 .delay-4 { transition-delay: 0.48s; }
 
-/* â”€â”€ NAVIGATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── NAVIGATION ──────────────────────────────────────────────── */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -266,7 +266,7 @@ ul { list-style: none; }
 
 
 
-/* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── HERO SECTION ────────────────────────────────────────────── */
 .hero {
   position: relative;
   width: 100%;
@@ -290,7 +290,7 @@ ul { list-style: none; }
     object-fit: cover;
     display: block;
     object-position: center center;
-  opacity: 0.5;
+  opacity: 0.73;
   transform: scale(1.02);
   transition: transform 16s ease, opacity 1s ease;
 }
@@ -453,6 +453,7 @@ ul { list-style: none; }
     display: flex;
     gap: 20px;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .hero-scroll-indicator {
@@ -500,7 +501,7 @@ ul { list-style: none; }
   to { opacity: 1; }
 }
 
-/* â”€â”€ BUTTONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── BUTTONS ─────────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -578,7 +579,7 @@ ul { list-style: none; }
   to   { transform: translateX(-50%); }
 }
 
-/* â”€â”€ SECTION SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── SECTION SHARED ──────────────────────────────────────────── */
 .section-label {
   font-family: var(--font-sans);
   font-size: 0.65rem;
@@ -614,22 +615,28 @@ ul { list-style: none; }
   line-height: 1.8;
 }
 
-/* â”€â”€ ABOUT SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ABOUT SECTION ───────────────────────────────────────────── */
+.about-section-wrapper {
+  position: relative;
+  width: 100%;
+  background: var(--ivory, #f8f5ef);
+  padding: 100px 0 120px;
+  overflow: hidden;
+}
+
 .about-section {
- width: 100%;
- height: 100%;
- padding : 0;
- object-fit: contain;
+  width: 100%;
+  padding: 0;
 }
 
 .about-container {
-  width: 90%;
-  max-width: 90%;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 64px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
   align-items: center;
   position: relative;
   z-index: 2;
@@ -833,7 +840,12 @@ ul { list-style: none; }
 }
 
 /* About text */
-.about-text-col {}
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .about-headline {
   font-family: var(--font-serif);
@@ -968,7 +980,7 @@ ul { list-style: none; }
   color: var(--sand);
 }
 
-/* â”€â”€ SERVICES SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── SERVICES SECTION ────────────────────────────────────────── */
 .services-section {
   padding: var(--section-pad) 0;
   background: var(--charcoal);
@@ -1118,11 +1130,7 @@ ul { list-style: none; }
 
 .service-card:hover .card-hover-line { width: 100%; }
 
-/* Last two cards span correctly in 3-col grid */
-.service-card:nth-child(4) { }
-.service-card:nth-child(5) { }
-
-/* â”€â”€ ARCHIVE SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ARCHIVE SECTION ─────────────────────────────────────────── */
 .archive-section {
   padding: var(--section-pad) 0;
   background: var(--ivory);
@@ -1253,7 +1261,7 @@ ul { list-style: none; }
   display: none;
 }
 
-/* â”€â”€ PORTFOLIO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── PORTFOLIO SECTION ───────────────────────────────────────── */
 .portfolio-section {
   padding: var(--section-pad) 0;
   background: var(--stone);
@@ -1452,7 +1460,7 @@ ul { list-style: none; }
   background: var(--forest);
 }
 
-/* â”€â”€ ENQUIRY SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ENQUIRY SECTION ─────────────────────────────────────────── */
 .enquiry-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1670,7 +1678,7 @@ ul { list-style: none; }
   text-align: center;
 }
 
-/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── FOOTER ──────────────────────────────────────────────────── */
 .footer {
   background: var(--charcoal);
   color: var(--ivory);
@@ -1789,7 +1797,7 @@ ul { list-style: none; }
   color: rgba(248, 245, 239, 0.3);
 }
 
-/* â”€â”€ TOAST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── TOAST ───────────────────────────────────────────────────── */
 .toast {
   position: fixed;
   bottom: 40px;
@@ -1826,17 +1834,31 @@ ul { list-style: none; }
   font-size: 0.85rem;
 }
 
-/* â”€â”€ PARALLAX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── PARALLAX ────────────────────────────────────────────────── */
 .parallax-layer {
   will-change: transform;
 }
 
-/* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
 @media (max-width: 1100px) {
   .about-container { grid-template-columns: 1fr; gap: 60px; padding: 0 32px; }
   .about-image-col { max-width: 600px; margin: 0 auto; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  /* Fix: chips + sketch thumb overflowed the container on tablets
+     since they were only hidden below 640px */
+  .chip-1 { top: 24px; right: 12px; }
+  .chip-2 { top: 110px; right: -8px; }
+  .about-sketch-thumb { width: 140px; bottom: -24px; right: -12px; }
+  body { overflow-x: hidden; }
+}
+
+@media (max-width: 900px) and (min-width: 641px) {
+  /* Fix: process steps had no tablet breakpoint, jumping straight
+     from 5 columns to 1 at 768px */
+  .process-track { grid-template-columns: repeat(2, 1fr); row-gap: 60px; }
+  .process-connector { display: none; }
 }
 
 @media (max-width: 900px) {
@@ -1871,9 +1893,23 @@ ul { list-style: none; }
   .chip-1, .chip-2 { display: none; }
   .archive-header, .portfolio-header, .services-container { padding: 0 24px; }
   .archive-filters { padding: 0 24px; }
-  .hero-content { padding: 0 16px; }
+  .hero-content { padding: 0 16px; margin-left: 0; max-width: 100%; }
+  .hero-eyebrow { justify-content: flex-start; }
   .hero-title { font-size: clamp(2.4rem, 10vw, 4rem); }
   .navbar { padding: 16px 20px; }
+  .btn { padding: 14px 24px; font-size: 0.68rem; }
+  .process-track { grid-template-columns: 1fr; gap: 48px; }
+  .process-connector { display: none; }
+  .process-inner { padding: 0 20px; }
+  .step-node { width: 64px; height: 64px; font-size: 1.05rem; }
+  .step-title { font-size: 1.15rem; }
+}
+
+@media (max-width: 480px) {
+  .archive-grid { grid-auto-rows: 200px; }
+  .tile-title { font-size: 1.1rem; }
+  .enquiry-left, .enquiry-right { padding: 48px 20px; }
+  .form-heading { font-size: 1.6rem; }
 }
 
 @media (max-width: 768px) {
